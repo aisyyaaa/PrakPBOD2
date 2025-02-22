@@ -12,18 +12,16 @@ public class Garis{
     static int counterGaris = 0;
 
     /***************METHOD***************/
-    //Konstruktor dengan titik awal (0,0) dan titik akhir (1,1).
-    garis(){
-        titikAwal = new Titik(0,0);
-        titikAkhir = new Titik(1,1);
+    //konstruktor dengan parameter
+    Garis(Titik P1, Titik P2){
+        titikAwal = P1;
+        titikAkhir = P2;
         counterGaris++;
     }
 
-    //Konstruktor garis dengan parameter titik awal dan titik akhir
-    garis(titikAwal,titikAkhir){
-        this.titikAwal = titikAwal;
-        this.titikAkhir = titikAkhir;
-        counterGaris++;
+    //konstruktor tanpa parameter yang menginisialisasi titik awal dengan (0,0) dan titik akhir dengan (1,1)
+    Garis(){
+        this(new Titik(0,0),new Titik(1,1));
     }
 
     //mengembalikan titik awal
@@ -37,12 +35,12 @@ public class Garis{
     }
 
     //set titik awal dengan titik baru
-    void setTititkAwal(Titik T){
+    void setTitikAwal(Titik T){
         titikAwal = T;
     }
 
     //set titik akhir dengan titik baru
-    void setTititkAkhir(Titik T){
+    void setTitikAkhir(Titik T){
         titikAkhir = T;
     }
 

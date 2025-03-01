@@ -2,7 +2,7 @@
  * Nama File      : MTitik.java
  * Deskripsi      : main class Titik
  * Pembuat        : Mutiara Aisyah Salsabila
- * Tanggal        : 21 Februari 2025
+ * Tanggal        : 28 Februari 2025
  */
 
 public class MTitik {

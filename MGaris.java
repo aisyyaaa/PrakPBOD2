@@ -2,7 +2,7 @@
  * Nama File      : MGaris.java
  * Deskripsi      : main class Garis
  * Pembuat        : Mutiara Aisyah Salsabila
- * Tanggal        : 21 Februari 2025
+ * Tanggal        : 28 Februari 2025
  */
 
 public class MGaris {

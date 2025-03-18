@@ -1,5 +1,5 @@
 /*
- * Nama File      : Pegawai.java
+ * Nama File      : Tendik.java
  * Pembuat        : Mutiara Aisyah Salsabila
  * Tanggal        : 17 Maret 2025
  */

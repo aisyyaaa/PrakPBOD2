@@ -1,3 +1,9 @@
+/*
+ * Nama File      : Dosen.java
+ * Pembuat        : Mutiara Aisyah Salsabila
+ * Tanggal        : 17 Maret 2025
+ */
+
 import java.time.LocalDate;
 
 public class Dosen extends Pegawai{

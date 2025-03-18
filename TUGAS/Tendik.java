@@ -1,3 +1,9 @@
+/*
+ * Nama File      : Pegawai.java
+ * Pembuat        : Mutiara Aisyah Salsabila
+ * Tanggal        : 17 Maret 2025
+ */
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;

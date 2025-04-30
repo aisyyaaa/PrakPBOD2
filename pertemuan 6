@@ -1,0 +1,88 @@
+/*
+Nama    : Mutiara Aisyah Salsabila
+NIM     : 24060123140119*/
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Anabul> daftarAnabul = new ArrayList<>();
+
+        daftarAnabul.add(new Kucing("Jojon"));
+        daftarAnabul.add(new Anjing("Don"));
+        daftarAnabul.add(new Burung("Den"));
+
+        for (Anabul a : daftarAnabul) {
+            System.out.println("Nama: " + a.getNama());
+            a.bersuara();
+            a.bergerak();
+            System.out.println();
+        }
+    }
+}
+
+// Abstract class induk
+abstract class Anabul {
+    protected String nama;
+
+    public Anabul(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public abstract void bersuara();
+    public abstract void bergerak();
+}
+
+// Subclass Kucing
+class Kucing extends Anabul {
+    public Kucing(String nama) {
+        super(nama);
+    }
+
+    @Override
+    public void bersuara() {
+        System.out.println("Meong");
+    }
+
+    @Override
+    public void bergerak() {
+        System.out.println(nama + " merupakan kucing yang senang melata dengan keempat kakinya yang imut");
+    }
+}
+
+// Subclass Anjing
+class Anjing extends Anabul {
+    public Anjing(String nama) {
+        super(nama);
+    }
+
+    @Override
+    public void bersuara() {
+        System.out.println("Guk-guk!");
+    }
+
+    @Override
+    public void bergerak() {
+        System.out.println(nama + " merupakan anjing yang melata dengan keempat kakinya yang penuh dengan keriangan");
+    }
+}
+
+// Subclass Burung
+class Burung extends Anabul {
+    public Burung(String nama) {
+        super(nama);
+    }
+
+    @Override
+    public void bersuara() {
+        System.out.println("Cuit cuit~");
+    }
+
+    @Override
+    public void bergerak() {
+        System.out.println(nama + " merupakan burung terbang yang terbang di langit dengan sayapnya yang indah");
+    }
+}
